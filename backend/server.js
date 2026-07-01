@@ -5,6 +5,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const path = require('path');
+const fs = require('fs');
 const { User, Video } = require('./models');
 const { upload, uploadToS3, s3Enabled } = require('./storage');
 const { generateThumbnail, getVideoAspectRatio, processVideoForFastStart } = require('./videoProcessor');
